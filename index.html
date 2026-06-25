@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> SKUNKEI - GitHub Page </title>
+    
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <a class="nav-logo" href="#">SKUNKEI</a>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <p class="hero-tagline">Rare &nbsp;&bull;&nbsp; Striking &nbsp;&bull;&nbsp; Unforgettable</p>
+        <h1 class="hero-title"><span class="plain">SKUN</span><span class="striped">KEI</span></h1>
+        <p class="hero-sub">Web-based solutions built clean, deployed fast, and designed to perform.</p>
+        <div class="hero-cta">
+            <a href="#services" class="btn btn-primary">What We Do</a>
+            <a href="#contact"  class="btn btn-outline">Get in Touch</a>
+        </div>
+    </section>
+
+    <div class="stripe-divider"></div>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="inner">
+            <p class="section-label">Services</p>
+            <h2 class="section-title">We build things<br>that work.</h2>
+            <p class="section-body">From small business websites to complex web platforms — every project gets the same commitment: understand the problem, build the right solution, make it look good.</p>
+
+            <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">&#128196;</div>
+                <h3>Custom Websites</h3>
+                <p>Hand-coded, performant websites tailored to your brand — no bloated frameworks, no unnecessary overhead.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">&#9881;</div>
+                <h3>Web Applications</h3>
+                <p>Full-stack PHP &amp; JavaScript applications built to handle real-world complexity and scale.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">&#128274;</div>
+                <h3>Auth &amp; Security</h3>
+                <p>Secure authentication flows, session management, and hardened back-ends you can rely on.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">&#128640;</div>
+                <h3>Deployment &amp; Hosting</h3>
+                <p>From server configuration to live deployment — we get your product out the door and keep it running.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="stripe-divider"></div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="inner">
+        <div class="about-inner">
+            <div class="skunk-graphic"> <img src="https://github.com/SKUNKEI/.github/raw/main/profile/logos/white.png" alt="SKUNKEI Logo"> </div>
+            <div class="about-text">
+                <p class="section-label">About</p>
+                <h2 class="section-title">Why SKUNKEI?</h2>
+                <p>Skunks are rare, striking, and unforgettable — qualities we bring to every project. We're passionate about crafting digital experiences that stand out and hold up.</p>
+                <p>We specialise in PHP, JavaScript, HTML, and CSS — writing clean code, shipping products that perform, and keeping the cruft out.</p>
+                <p>No unnecessary complexity. No bloat. Just work that delivers.</p>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="stripe-divider"></div>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="inner">
+        <p class="section-label">Contact</p>
+        <h2 class="section-title">Let's build something.</h2>
+        <p class="section-body">Have a project in mind? Reach out and let's talk about what you need.</p>
+        <a class="contact-email" href="https://skunkei.com">skunkei.com</a>
+        <div class="socials">
+            <a href="https://instagram.com/theskunkei" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://x.com/theskunkei"        target="_blank" rel="noopener">X / Twitter</a>
+        </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; <span id="yr"></span> SKUNKEI. All rights reserved.</p>
+        <span class="footer-motto">Rare &bull; Striking &bull; Unforgettable</span>
+    </footer>
+
+    <script>
+        document.getElementById('yr').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
