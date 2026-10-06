@@ -1,111 +1,178 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SKUNKEI - GitHub Page </title>
-    
-    <link rel="stylesheet" href="styles.css" type="text/css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#080d10">
+		<meta name="description" content="Explore SKUNKEI's connected platform of secure, practical digital tools.">
+		<title>SKUNKEI | Connected tools</title>
+		<link rel="icon" href="https://static.skunkei.com/static/img/logo/skunkei/favicon.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<link rel="stylesheet" href="https://static.skunkei.com/static/css/global.css">
+		<link rel="stylesheet" href="https://static.skunkei.com/static/css/www/style.css">
+		<link rel="stylesheet" href="css/home.css">
 </head>
 <body>
+		<header class="sk-header">
+				<div class="sk-container">
+						<div class="sk-header-inner">
+								<a class="sk-brand" href="https://skunkei.com/" aria-label="SKUNKEI home">
+										<span class="sk-brand-mark"><img src="https://static.skunkei.com/static/img/logo/skunkei/clear_white/logo.png" alt="SKUNKEI logo"></span>
+										<span>SKUNKEI</span>
+								</a>
+								<nav class="sk-nav-links" id="mobileNavLinks" aria-label="Main navigation">
+										<a class="sk-nav-link" href="#applications">Applications</a>
+										<a class="sk-nav-link" href="https://skunkei.com/about">About</a>
+								</nav>
+								<div class="sk-header-actions">
+										<a class="sk-btn sk-btn-secondary" href="https://status.skunkei.com/">
+												<i class="fa-regular fa-circle-check" aria-hidden="true"></i> Status
+										</a>
+										<a class="sk-btn sk-btn-primary" href="https://account.skunkei.com/">Login</a>
+										<button class="sk-mobile-toggle" id="mobileNavToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+												<i class="fa-solid fa-bars" aria-hidden="true"></i>
+										</button>
+								</div>
+						</div>
+				</div>
+		</header>
 
-    <!-- NAV -->
-    <nav>
-        <a class="nav-logo" href="#">SKUNKEI</a>
-        <ul class="nav-links">
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+		<main>
+				<section class="sk-section" id="applications">
+						<div class="sk-container">
+								<div class="sk-section-header">
+										<span class="sk-section-tag">The SKUNKEI platform</span>
+										<p class="sk-section-desc">Choose the workspace you need and move directly into the work.</p>
+								</div>
+								<div class="sk-filter-tabs" role="tablist" aria-label="Filter applications">
+										<button class="sk-tab-btn active" type="button" role="tab" aria-selected="true" data-filter="all">All tools</button>
+										<button class="sk-tab-btn" type="button" role="tab" aria-selected="false" data-filter="security">Security</button>
+										<button class="sk-tab-btn" type="button" role="tab" aria-selected="false" data-filter="addons">Add-ons</button>
+										<button class="sk-tab-btn" type="button" role="tab" aria-selected="false" data-filter="operations">Operations</button>
+								</div>
+								<div class="sk-apps-grid" id="skApplicationsGrid">
+										<a class="sk-app-card" href="https://account.skunkei.com/" data-category="security">
+												<div class="sk-app-header"><span class="sk-app-icon"><img src="https://static.skunkei.com/static/img/logo/skunkei/logo.png" alt="SKUNKEI logo"></span><span class="sk-app-badge">Security</span></div>
+												<h3 class="sk-app-title">Account</h3>
+												<p class="sk-app-desc">Manage your profile, security, sessions, and access across the SKUNKEI platform.</p>
+												<span class="sk-app-footer"><span class="sk-app-link-text">Open account <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+										</a>
+										<a class="sk-app-card" href="https://pass.skunkei.com/" data-category="security">
+												<div class="sk-app-header"><span class="sk-app-icon"><img src="https://static.skunkei.com/static/img/logo/pass/logo.png" alt="PassKei logo"></span><span class="sk-app-badge">Management</span></div>
+												<h3 class="sk-app-title">PassKei</h3>
+												<p class="sk-app-desc">Keep passwords and passkeys organized in an encrypted vault designed for daily use.</p>
+												<span class="sk-app-footer"><span class="sk-app-link-text">Open PassKei <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+										</a>
+										<a href="https://chromewebstore.google.com/detail/passkei-by-skunkei/jlghjekikfjljkjijldpiahnoiojhbmm" class="sk-app-card" target="_blank" rel="noopener noreferrer" data-category="addons" data-addon="true">
+												<div class="sk-app-header"><span class="sk-app-icon"><i class="fa-brands fa-chrome" aria-hidden="true"></i></span><span class="sk-app-badge">Chrome</span></div>
+												<h3 class="sk-app-title">PassKei for Chrome</h3>
+												<p class="sk-app-desc">Securely connect Chrome to your PassKei vault with password autofill, password saving, and passkey support.</p>
+												<span class="sk-app-footer"><span class="sk-app-link-text">Download for Chrome <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span><span>v0.1.4</span></span>
+										</a>
+										<a href="https://static.skunkei.com/download/passkei/passkei-0.1.1.xpi" class="sk-app-card" target="_blank" rel="noopener noreferrer" data-category="addons" data-addon="true">
+												<div class="sk-app-header"><span class="sk-app-icon"><i class="fa-brands fa-firefox-browser" aria-hidden="true"></i></span><span class="sk-app-badge">Firefox</span></div>
+												<h3 class="sk-app-title">PassKei for Firefox</h3>
+												<p class="sk-app-desc">Use PassKei across Firefox devices with secure autofill, password management, and passkey workflows.</p>
+												<span class="sk-app-footer"><span class="sk-app-link-text">Download for Firefox <i class="fa-solid fa-download" aria-hidden="true"></i></span><span>v0.1.1</span></span>
+										</a>
+										<a class="sk-app-card" href="https://storestock.skunkei.com/" data-category="operations" data-addon="true">
+												<div class="sk-app-header"><span class="sk-app-icon"><img src="https://static.skunkei.com/static/img/logo/storestock/logo.png" alt="StoreStock logo"></span><span class="sk-app-badge">ServiceM8</span></div>
+												<h3 class="sk-app-title">StoreStock</h3>
+												<p class="sk-app-desc">A ServiceM8 add-on for stock, inventory, and operations workflows, built to keep field work moving.</p>
+												<span class="sk-app-footer"><span class="sk-app-link-text">Open StoreStock <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+										</a>
+										<a class="sk-app-card" href="https://budget.skunkei.com/" data-category="operations">
+												<div class="sk-app-header"><span class="sk-app-icon"><i class="fa-solid fa-wallet" aria-hidden="true"></i></span><span class="sk-app-badge">Finance</span></div>
+												<h3 class="sk-app-title">Budget</h3>
+												<p class="sk-app-desc">See where your money is going, plan ahead, and make everyday decisions with confidence.</p>
+												<span class="sk-app-footer"><span class="sk-app-link-text">Open Budget <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></span><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></span>
+										</a>
+								</div>
+						</div>
+				</section>
 
-    <!-- HERO -->
-    <section id="hero">
-        <p class="hero-tagline">Rare &nbsp;&bull;&nbsp; Striking &nbsp;&bull;&nbsp; Unforgettable</p>
-        <h1 class="hero-title"><span class="plain">SKUN</span><span class="striped">KEI</span></h1>
-        <p class="hero-sub">Web-based solutions built clean, deployed fast, and designed to perform.</p>
-        <div class="hero-cta">
-            <a href="#services" class="btn btn-primary">What We Do</a>
-            <a href="#contact"  class="btn btn-outline">Get in Touch</a>
-        </div>
-    </section>
+				<section class="sk-section" id="platform">
+						<div class="sk-container">
+								<div class="sk-section-header">
+										<span class="sk-section-tag">Designed around trust</span>
+										<p class="sk-section-desc">SKUNKEI is built to keep important information close, understandable, and under your control.</p>
+								</div>
+								<div class="sk-features-grid">
+										<article class="sk-feature-card"><span class="sk-feature-icon"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i></span><div class="sk-feature-content"><h3>Security as a foundation</h3><p>Authentication, encrypted records, session controls, and careful access boundaries are part of the platform itself.</p></div></article>
+										<article class="sk-feature-card"><span class="sk-feature-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></span><div class="sk-feature-content"><h3>One connected workspace</h3><p>Move between focused tools without rebuilding your identity, preferences, or workflow each time.</p></div></article>
+										<article class="sk-feature-card"><span class="sk-feature-icon"><i class="fa-solid fa-gauge-high" aria-hidden="true"></i></span><div class="sk-feature-content"><h3>Made for repeated use</h3><p>Dense where it needs to be, simple where it can be, and shaped around the small actions you take every day.</p></div></article>
+										<article class="sk-feature-card"><span class="sk-feature-icon"><i class="fa-solid fa-code-branch" aria-hidden="true"></i></span><div class="sk-feature-content"><h3>Built to keep evolving</h3><p>Shared foundations make it possible to add useful capabilities without turning the whole platform into a maze.</p></div></article>
+								</div>
+						</div>
+				</section>
+		</main>
 
-    <div class="stripe-divider"></div>
+		<footer class="sk-footer">
+				<div class="sk-container">
+						<div class="sk-footer-grid">
+								<div><a class="sk-brand" href="https://skunkei.com/"><span class="sk-brand-mark"><img src="https://static.skunkei.com/static/img/logo/skunkei/clear_white/logo.png" alt="SKUNKEI logo"></span><span>SKUNKEI</span></a><p class="sk-footer-brand-desc">A connected platform for secure, practical digital tools. Created by Keirran Blackley.</p></div>
+								<div class="sk-footer-col"><h4>Platform</h4><div class="sk-footer-links"><a class="sk-footer-link" href="#applications">Applications</a><a class="sk-footer-link" href="https://skunkei.com/about">About SKUNKEI</a><a class="sk-footer-link" href="https://status.skunkei.com/">System status</a></div></div>
+								<div class="sk-footer-col"><h4>Account</h4><div class="sk-footer-links"><a class="sk-footer-link" href="https://account.skunkei.com/">Sign in</a><a class="sk-footer-link" href="https://account.skunkei.com/signup">Create account</a><a class="sk-footer-link" href="https://pass.skunkei.com/">PassKei</a></div></div>
+								<div class="sk-footer-col"><h4>Support</h4><div class="sk-footer-links"><a class="sk-footer-link" href="mailto:service@skunkei.com">Contact</a><a class="sk-footer-link" href="https://skunkei.com/privacy">Privacy</a></div></div>
+						</div>
+						<div class="sk-footer-bottom"><span>&copy; 2026 Keirran Blackley</span><span>Sharp thinking. Strong security.</span></div>
+				</div>
+		</footer>
 
-    <!-- SERVICES -->
-    <section id="services">
-        <div class="inner">
-            <p class="section-label">Services</p>
-            <h2 class="section-title">We build things<br>that work.</h2>
-            <p class="section-body">From small business websites to complex web platforms — every project gets the same commitment: understand the problem, build the right solution, make it look good.</p>
+		<script>
+				(() => {
+						const tabs = [...document.querySelectorAll('.sk-tab-btn')];
+						const cards = [...document.querySelectorAll('#skApplicationsGrid .sk-app-card')];
+						tabs.forEach(tab => tab.addEventListener('click', () => {
+								const filter = tab.dataset.filter;
+								tabs.forEach(item => {
+										const active = item === tab;
+										item.classList.toggle('active', active);
+										item.setAttribute('aria-selected', String(active));
+								});
+								cards.forEach(card => {
+										const category = card.dataset.category;
+										const visible = filter === 'all' || (filter === 'addons' ? card.dataset.addon === 'true' : category === filter);
+										card.hidden = !visible;
+								});
+						}));
 
-            <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">&#128196;</div>
-                <h3>Custom Websites</h3>
-                <p>Hand-coded, performant websites tailored to your brand — no bloated frameworks, no unnecessary overhead.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">&#9881;</div>
-                <h3>Web Applications</h3>
-                <p>Full-stack PHP &amp; JavaScript applications built to handle real-world complexity and scale.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">&#128274;</div>
-                <h3>Auth &amp; Security</h3>
-                <p>Secure authentication flows, session management, and hardened back-ends you can rely on.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">&#128640;</div>
-                <h3>Deployment &amp; Hosting</h3>
-                <p>From server configuration to live deployment — we get your product out the door and keep it running.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="stripe-divider"></div>
-
-    <!-- ABOUT -->
-    <section id="about">
-        <div class="inner">
-        <div class="about-inner">
-            <div class="skunk-graphic"> <img src="https://github.com/SKUNKEI/.github/raw/main/profile/logos/white.png" alt="SKUNKEI Logo"> </div>
-            <div class="about-text">
-                <p class="section-label">About</p>
-                <h2 class="section-title">Why SKUNKEI?</h2>
-                <p>Skunks are rare, striking, and unforgettable — qualities we bring to every project. We're passionate about crafting digital experiences that stand out and hold up.</p>
-                <p>We specialise in PHP, JavaScript, HTML, and CSS — writing clean code, shipping products that perform, and keeping the cruft out.</p>
-                <p>No unnecessary complexity. No bloat. Just work that delivers.</p>
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <div class="stripe-divider"></div>
-
-    <!-- CONTACT -->
-    <section id="contact">
-        <div class="inner">
-        <p class="section-label">Contact</p>
-        <h2 class="section-title">Let's build something.</h2>
-        <p class="section-body">Have a project in mind? Reach out and let's talk about what you need.</p>
-        <a class="contact-email" href="https://skunkei.com">skunkei.com</a>
-        <div class="socials">
-            <a href="https://instagram.com/theskunkei" target="_blank" rel="noopener">Instagram</a>
-            <a href="https://x.com/theskunkei"        target="_blank" rel="noopener">X / Twitter</a>
-        </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; <span id="yr"></span> SKUNKEI. All rights reserved.</p>
-        <span class="footer-motto">Rare &bull; Striking &bull; Unforgettable</span>
-    </footer>
-
-    <script>
-        document.getElementById('yr').textContent = new Date().getFullYear();
-    </script>
-
+						const toggle = document.getElementById('mobileNavToggle');
+						const nav = document.getElementById('mobileNavLinks');
+						if (!toggle || !nav) return;
+						const backdrop = document.createElement('div');
+						backdrop.className = 'sk-nav-backdrop';
+						backdrop.setAttribute('aria-hidden', 'true');
+						document.body.append(backdrop);
+						const close = document.createElement('button');
+						close.className = 'sk-nav-close';
+						close.type = 'button';
+						close.setAttribute('aria-label', 'Close menu');
+						close.innerHTML = '<i class="fa-solid fa-xmark" aria-hidden="true"></i><span>Close menu</span>';
+						nav.prepend(close);
+						const closeMenu = () => {
+								nav.classList.remove('active');
+								backdrop.classList.remove('active');
+								document.body.classList.remove('sk-menu-open');
+								toggle.setAttribute('aria-expanded', 'false');
+								toggle.innerHTML = '<i class="fa-solid fa-bars" aria-hidden="true"></i>';
+						};
+						toggle.addEventListener('click', () => {
+								const open = nav.classList.toggle('active');
+								backdrop.classList.toggle('active', open);
+								document.body.classList.toggle('sk-menu-open', open);
+								toggle.setAttribute('aria-expanded', String(open));
+								toggle.innerHTML = `<i class="fa-solid fa-${open ? 'xmark' : 'bars'}" aria-hidden="true"></i>`;
+						});
+						close.addEventListener('click', closeMenu);
+						backdrop.addEventListener('click', closeMenu);
+						nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+						document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
+						window.addEventListener('resize', () => { if (innerWidth > 768) closeMenu(); });
+				})();
+		</script>
 </body>
 </html>
